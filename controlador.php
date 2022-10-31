@@ -24,7 +24,7 @@ if (isset($_POST['accion'])) {
                 echo '<script>window.location="' . "proyectos.php" . '"</script>';
             } else if (strlen($_SESSION['password']) < 8) {
                 echo '<script>window.location="' . "login.php?error" . '"</script>';
-            } else if ($mayuscula = false) {
+            } else if ($mayuscula == false) {
                 echo '<script>window.location="' . "login.php?error" . '"</script>';
             } else
                 echo '<script>window.location="' . "login.php" . '"</script>';

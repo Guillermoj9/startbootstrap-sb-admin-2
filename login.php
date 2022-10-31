@@ -51,7 +51,7 @@
                                         }
                                     ?>
 
-                                    <form class="user" action='controlador.php' method='POST' >
+                                    <form class="user" action="controlador.php" method='POST' >
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
