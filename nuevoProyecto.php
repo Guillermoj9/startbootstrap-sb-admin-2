@@ -4,8 +4,9 @@
 
 <center><h1>CREAR PROYECTO NUEVO</h1></center>
 
-<form class="user" action="controlador.php" method="POST">
-    <div class="mb-3">
+<form class="user" action="controlador.php" method="post">
+<div>   
+<div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nombre proyecto</label>
         <input type="text" name="nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce nombre proyecto">
 
@@ -34,8 +35,8 @@
         <input type="text" name="importancia" class="form-control" id="exampleInputPassword1">
     </div>
     <input type="hidden" name="accion" value="nuevoProy">
-    <center><button type="submit" class="btn btn-primary">Crear proyecto</button></center>
-   
+    <center><button name="nuevoProyecto" type="submit" class="btn btn-primary">Crear proyecto</button></center>
+    </div>
 </form>
 
 

@@ -42,7 +42,8 @@ foreach ($_SESSION['proyectos'] as $proyec) {
     echo "<td>" . $proyec["diasTranscurridos"] . "</td>";
     echo "<td>" . $proyec["porcentajeCompletado"] . "</td>";
     echo "<td>" . $proyec["importancia"] . "</td>";
-   
+    echo '<td><a href="controlador.php?accion=verInfo&id='. $proyec['id'] .'" class="btn btn-primary">INFO</a> </td>';
+    echo '<td><a href="controlador.php?accion=eliminar&id='. $proyec['id'] . '" class="btn btn-secondary">BORRAR</a> </td>';
     echo "</tr>";
 }
 
@@ -58,4 +59,3 @@ echo "</table>";
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
 
-<?php include("pie.php"); ?>
